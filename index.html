@@ -1,235 +1,200 @@
 <!DOCTYPE html>
-<html lang="id" class="scroll-smooth">
+<html lang="id">
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KMK49FXM');</script>
+    <!-- End Google Tag Manager -->
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammad Ramadhani | Portfolio</title>
-    <!-- Tailwind CSS -->
+    <title>Muhammad Ramadhani - Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font Awesome untuk Ikon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-                    },
-                    colors: {
-                        brand: {
-                            50: '#eff6ff',
-                            500: '#3b82f6',
-                            600: '#2563eb',
-                            900: '#1e3a8a',
-                        }
-                    }
-                }
-            }
-        }
-    </script>
     <style>
-        /* Animasi sederhana untuk elemen muncul */
-        .fade-in { animation: fadeIn 1s ease-in-out; }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+        .text-gradient {
+            background: linear-gradient(to right, #fb923c, #f97316); /* orange-400 to orange-500 */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bg-gradient-accent {
+            background: linear-gradient(to right, #fb923c, #ea580c);
         }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased selection:bg-brand-500 selection:text-white">
+<body class="bg-white text-gray-800 font-sans antialiased">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KMK49FXM"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
-    <!-- Navbar -->
-    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200 transition-all duration-300">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold tracking-tighter text-slate-900">
-                Rama<span class="text-brand-600">dhani.</span>
-            </a>
-            <div class="hidden md:flex gap-8 font-medium text-slate-600">
-                <a href="#about" class="hover:text-brand-600 transition-colors">Tentang</a>
-                <a href="#skills" class="hover:text-brand-600 transition-colors">Keahlian</a>
-                <a href="#projects" class="hover:text-brand-600 transition-colors">Proyek</a>
-                <a href="#contact" class="hover:text-brand-600 transition-colors">Kontak</a>
+    <div class="max-w-5xl mx-auto px-4 py-12">
+        <!-- Header Section -->
+        <header class="flex flex-col md:flex-row items-center gap-8 mb-16">
+            <div class="w-48 h-48 rounded-full overflow-hidden border-4 border-blue-100 shadow-xl flex-shrink-0">
+                <img src="profile.jpg" alt="Muhammad Ramadhani" class="w-full h-full object-cover">
             </div>
-            <!-- Tombol CTA -->
-            <a href="#contact" class="hidden md:block bg-slate-900 text-white px-5 py-2.5 rounded-full font-medium hover:bg-brand-600 transition-all shadow-lg hover:shadow-brand-500/30">
-                Mari Diskusi <i class="fas fa-arrow-right ml-2 text-sm"></i>
-            </a>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden flex items-center min-h-screen">
-        <div class="max-w-6xl mx-auto px-6 flex flex-col-reverse md:flex-row items-center gap-12 relative z-10 fade-in">
-            
-            <!-- Teks -->
-            <div class="w-full md:w-3/5 text-center md:text-left">
-                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-50 border border-brand-100 text-brand-600 font-medium text-sm mb-6">
-                    <span class="relative flex h-3 w-3">
-                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-500 opacity-75"></span>
-                      <span class="relative inline-flex rounded-full h-3 w-3 bg-brand-600"></span>
+            <div class="text-center md:text-left">
+                <h1 class="text-4xl md:text-5xl font-bold mb-2">Muhammad <span class="text-gradient">Ramadhani</span></h1>
+                <p class="text-xl text-blue-600 font-semibold mb-4">SEO & Digital Marketing Specialist</p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4 text-sm text-gray-600">
+                    <a href="mailto:hello@itsramadhani.me" class="flex items-center gap-1 hover:text-blue-600">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg> 
+                        hello@itsramadhani.me
+                    </a>
+                    <span class="flex items-center gap-1">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg> 
+                        Jakarta, Indonesia
                     </span>
-                    Tersedia untuk proyek baru
-                </div>
-                <h1 class="text-5xl md:text-7xl font-bold text-slate-900 tracking-tight leading-tight mb-6">
-                    Membangun <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-cyan-500">Website</span> yang <br/> Kreatif & Fungsional
-                </h1>
-                <p class="text-lg md:text-xl text-slate-600 mb-8 max-w-lg mx-auto md:mx-0 leading-relaxed">
-                    Halo, saya Ramadhani. Saya mengubah ide-ide brilian menjadi pengalaman digital yang interaktif dan modern.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                    <a href="#projects" class="bg-brand-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-brand-700 transition-all shadow-lg shadow-brand-500/30 text-center">
-                        Lihat Portofolio
-                    </a>
-                    <a href="https://github.com/itsramadhani" target="_blank" class="bg-white text-slate-700 border border-slate-200 px-8 py-4 rounded-full font-semibold hover:bg-slate-50 transition-all text-center flex items-center justify-center gap-2">
-                        <i class="fab fa-github text-xl"></i> GitHub Saya
+                    <a href="https://itsramadhani.me" target="_blank" class="flex items-center gap-1 hover:text-blue-600">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 030 4h-.14a6.002 6.002 0 01-1.36 2.37A6.003 6.003 0 015.42 16a2 2 0 01-1.39-3.23c.31-.31.73-.48 1.17-.48h.3c.7 0 1.25-.56 1.25-1.25v-.32c0-.7-.56-1.25-1.25-1.25h-.3c-.22 0-.44-.09-.6-.25L4.332 8.027z" clip-rule="evenodd"/></svg> 
+                        itsramadhani.me
                     </a>
                 </div>
             </div>
+        </header>
 
-            <!-- Gambar / Ilustrasi -->
-            <div class="w-full md:w-2/5 flex justify-center">
-                <div class="relative w-72 h-72 md:w-96 md:h-96">
-                    <!-- Lingkaran Dekorasi -->
-                    <div class="absolute inset-0 bg-gradient-to-tr from-brand-100 to-blue-50 rounded-full animate-[spin_10s_linear_infinite]"></div>
-                    <div class="absolute inset-4 bg-white rounded-full shadow-2xl flex items-center justify-center overflow-hidden border-4 border-white z-10">
-                        <i class="fas fa-laptop-code text-8xl text-brand-500"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        <!-- Summary -->
+        <section class="mb-12 bg-blue-50 p-6 rounded-2xl border border-blue-100">
+            <p class="text-gray-700 leading-relaxed">
+                Saya adalah spesialis SEO & Digital Marketing yang berfokus pada pertumbuhan <em>organic visibility</em> dan manajemen kampanye terintegrasi. Lulus sebagai <strong>Wisudawan Terbaik dengan IPK 3.88 dari Universitas Padjadjaran</strong>, saya menggabungkan kerangka berpikir akademis yang kuat dengan kecepatan eksekusi di dunia industri. Saya telah membuktikan rekam jejak dalam meroketkan impresi pencarian organik hingga 213% (1,6 Juta ke 5,1 Juta/bulan) dan mengoptimasi ekosistem kampanye omnichannel yang menghasilkan lebih dari 2.400+ qualified leads.
+            </p>
+        </section>
 
-    <!-- Keahlian (Skills) -->
-    <section id="skills" class="py-20 bg-white border-y border-slate-100">
-        <div class="max-w-6xl mx-auto px-6 text-center">
-            <h2 class="text-sm font-bold tracking-widest text-brand-600 uppercase mb-2">Tech Stack</h2>
-            <h3 class="text-3xl font-bold text-slate-900 mb-12">Teknologi yang Saya Gunakan</h3>
-            
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-                <!-- Skill 1 -->
-                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:border-brand-200 hover:shadow-lg transition-all group">
-                    <i class="fab fa-html5 text-5xl text-orange-500 mb-4 group-hover:scale-110 transition-transform"></i>
-                    <h4 class="font-bold text-slate-800">HTML5</h4>
-                </div>
-                <!-- Skill 2 -->
-                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:border-brand-200 hover:shadow-lg transition-all group">
-                    <i class="fab fa-css3-alt text-5xl text-blue-500 mb-4 group-hover:scale-110 transition-transform"></i>
-                    <h4 class="font-bold text-slate-800">CSS3 & Tailwind</h4>
-                </div>
-                <!-- Skill 3 -->
-                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:border-brand-200 hover:shadow-lg transition-all group">
-                    <i class="fab fa-js text-5xl text-yellow-400 mb-4 group-hover:scale-110 transition-transform"></i>
-                    <h4 class="font-bold text-slate-800">JavaScript</h4>
-                </div>
-                <!-- Skill 4 -->
-                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:border-brand-200 hover:shadow-lg transition-all group">
-                    <i class="fab fa-git-alt text-5xl text-red-500 mb-4 group-hover:scale-110 transition-transform"></i>
-                    <h4 class="font-bold text-slate-800">Git & GitHub</h4>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="py-24 bg-slate-50">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="mb-16 md:flex justify-between items-end">
-                <div>
-                    <h2 class="text-sm font-bold tracking-widest text-brand-600 uppercase mb-2">Portofolio</h2>
-                    <h3 class="text-4xl font-bold text-slate-900">Karya Terbaru Saya</h3>
-                </div>
-                <a href="#" class="hidden md:inline-flex items-center text-brand-600 font-semibold hover:text-brand-800 transition-colors">
-                    Lihat semua proyek <i class="fas fa-arrow-right ml-2"></i>
-                </a>
-            </div>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Proyek 1 -->
-                <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                    <div class="h-56 bg-slate-200 relative group overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Project 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-8">
-                        <div class="flex gap-2 mb-4">
-                            <span class="px-3 py-1 bg-slate-100 text-xs font-semibold text-slate-600 rounded-full">Web App</span>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <!-- Left Column -->
+            <div class="md:col-span-2 space-y-12">
+                <!-- Experience -->
+                <section>
+                    <h2 class="text-2xl font-bold mb-6 flex items-center gap-2"><span class="w-8 h-1 bg-gradient-accent rounded-full"></span> Riwayat Pekerjaan</h2>
+                    
+                    <div class="space-y-8">
+                        <div class="relative pl-6 border-l-2 border-blue-200">
+                            <div class="absolute w-4 h-4 bg-orange-400 rounded-full -left-[9px] top-1 border-4 border-white"></div>
+                            <h3 class="text-xl font-bold text-gray-800">Website & Performance Marketing Intern</h3>
+                            <div class="text-blue-600 font-medium mb-1">Prudential Syariah</div>
+                            <div class="text-sm text-gray-500 mb-3">Agustus 2025 - Sekarang</div>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1 text-sm">
+                                <li>Mengelola operasional konten website end-to-end untuk 170+ artikel.</li>
+                                <li>Meningkatkan visibilitas di Google Search dari 1,6 juta menjadi 5,1 juta impressions per bulan (+213%).</li>
+                                <li>Menaikkan peringkat rata-rata di Google dari 9,98 menjadi 4,25.</li>
+                                <li>Mengelola distribusi dan validasi atas 2.400+ leads dari kampanye.</li>
+                            </ul>
                         </div>
-                        <h4 class="text-2xl font-bold text-slate-900 mb-3">Sistem Manajemen</h4>
-                        <p class="text-slate-600 mb-6 line-clamp-2">Aplikasi berbasis web untuk mengatur tugas dan alur kerja tim secara efisien.</p>
-                        <a href="#" class="text-brand-600 font-bold flex items-center hover:text-brand-800">Review Proyek <i class="fas fa-chevron-right ml-2 text-xs"></i></a>
-                    </div>
-                </div>
 
-                <!-- Proyek 2 -->
-                <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                    <div class="h-56 bg-slate-200 relative group overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Project 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-8">
-                        <div class="flex gap-2 mb-4">
-                            <span class="px-3 py-1 bg-slate-100 text-xs font-semibold text-slate-600 rounded-full">Company Profile</span>
+                        <div class="relative pl-6 border-l-2 border-blue-200">
+                            <div class="absolute w-4 h-4 bg-orange-400 rounded-full -left-[9px] top-1 border-4 border-white"></div>
+                            <h3 class="text-xl font-bold text-gray-800">Social Media Specialist Intern</h3>
+                            <div class="text-blue-600 font-medium mb-1">Syaamil Group</div>
+                            <div class="text-sm text-gray-500 mb-3">Januari 2025 - Maret 2025</div>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1 text-sm">
+                                <li>Mengeksekusi rencana konten media sosial perusahaan (5 konten per minggu).</li>
+                                <li>Mendesain 20+ aset visual untuk kebutuhan promosi cross-channel.</li>
+                            </ul>
                         </div>
-                        <h4 class="text-2xl font-bold text-slate-900 mb-3">Website Korporat</h4>
-                        <p class="text-slate-600 mb-6 line-clamp-2">Desain ulang website perusahaan untuk meningkatkan kecepatan dan user experience.</p>
-                        <a href="#" class="text-brand-600 font-bold flex items-center hover:text-brand-800">Review Proyek <i class="fas fa-chevron-right ml-2 text-xs"></i></a>
-                    </div>
-                </div>
 
-                <!-- Proyek 3 -->
-                <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                    <div class="h-56 bg-slate-200 relative group overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Project 3" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-8">
-                        <div class="flex gap-2 mb-4">
-                            <span class="px-3 py-1 bg-slate-100 text-xs font-semibold text-slate-600 rounded-full">E-Commerce</span>
+                        <div class="relative pl-6 border-l-2 border-blue-200">
+                            <div class="absolute w-4 h-4 bg-orange-400 rounded-full -left-[9px] top-1 border-4 border-white"></div>
+                            <h3 class="text-xl font-bold text-gray-800">Website & Digital Marketing Developer</h3>
+                            <div class="text-blue-600 font-medium mb-1">PT Arkatama Multi Solusindo</div>
+                            <div class="text-sm text-gray-500 mb-3">Januari 2025 - Maret 2025</div>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1 text-sm">
+                                <li>Membangun dan mengoptimasi website berbasis WordPress, strategi SEO dan SEM.</li>
+                                <li>Mengeksekusi kampanye Social Media Marketing end-to-end (Instagram & TikTok).</li>
+                            </ul>
                         </div>
-                        <h4 class="text-2xl font-bold text-slate-900 mb-3">Toko Online</h4>
-                        <p class="text-slate-600 mb-6 line-clamp-2">Platform jual beli online dengan fitur keranjang belanja dan checkout.</p>
-                        <a href="#" class="text-brand-600 font-bold flex items-center hover:text-brand-800">Review Proyek <i class="fas fa-chevron-right ml-2 text-xs"></i></a>
                     </div>
-                </div>
+                </section>
+
+                <!-- Education -->
+                <section>
+                    <h2 class="text-2xl font-bold mb-6 flex items-center gap-2"><span class="w-8 h-1 bg-gradient-accent rounded-full"></span> Pendidikan</h2>
+                    <div class="relative pl-6 border-l-2 border-blue-200">
+                        <div class="absolute w-4 h-4 bg-orange-400 rounded-full -left-[9px] top-1 border-4 border-white"></div>
+                        <h3 class="text-xl font-bold text-gray-800">D4 Pemasaran Digital</h3>
+                        <div class="text-blue-600 font-medium mb-1">Universitas Padjadjaran</div>
+                        <div class="text-sm text-gray-500 mb-3">Agustus 2021 - Juli 2025</div>
+                        <p class="text-sm text-gray-700">Lulus sebagai <strong>Wisudawan Terbaik</strong> jenjang Sarjana Terapan Pemasaran Digital dengan <strong>IPK 3,88/4,00</strong>.</p>
+                    </div>
+                </section>
+                
+                <!-- Projects -->
+                <section>
+                    <h2 class="text-2xl font-bold mb-6 flex items-center gap-2"><span class="w-8 h-1 bg-gradient-accent rounded-full"></span> Proyek</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="border border-gray-200 rounded-xl p-4 hover:border-orange-400 transition">
+                            <h4 class="font-bold text-lg mb-2">Halaman Arahan Lebah Bersama</h4>
+                            <p class="text-sm text-gray-600">Merancang dan membangun UI yang modern dan ramah pengguna untuk situs web nirlaba yang didedikasikan untuk peternakan lebah.</p>
+                        </div>
+                        <div class="border border-gray-200 rounded-xl p-4 hover:border-orange-400 transition">
+                            <h4 class="font-bold text-lg mb-2">Situs Web Pribadi /SK</h4>
+                            <p class="text-sm text-gray-600">Merancang situs web modern khusus untuk seniman tekstil lokal menggunakan Webflow dan Rive.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Right Column -->
+            <div class="space-y-10">
+                <!-- Skills -->
+                <section>
+                    <h2 class="text-2xl font-bold mb-6 flex items-center gap-2"><span class="w-8 h-1 bg-gradient-accent rounded-full"></span> Skill Utama</h2>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium border border-blue-100">SEO Optimization</span>
+                        <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium border border-blue-100">Performance Marketing</span>
+                        <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium border border-blue-100">Content Strategy</span>
+                        <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium border border-blue-100">Lead Generation</span>
+                        <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium border border-blue-100">Data-Driven Research</span>
+                        <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium border border-blue-100">CMS Development</span>
+                    </div>
+                </section>
+
+                <!-- Tools -->
+                <section>
+                    <h2 class="text-2xl font-bold mb-6 flex items-center gap-2"><span class="w-8 h-1 bg-gradient-accent rounded-full"></span> Perangkat Digital</h2>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded text-xs border border-gray-200">Google Analytics</span>
+                        <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded text-xs border border-gray-200">GTM</span>
+                        <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded text-xs border border-gray-200">Google Ads</span>
+                        <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded text-xs border border-gray-200">Meta Ads</span>
+                        <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded text-xs border border-gray-200">Figma</span>
+                        <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded text-xs border border-gray-200">Wordpress</span>
+                        <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded text-xs border border-gray-200">SEMRush</span>
+                        <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded text-xs border border-gray-200">HTML & JS</span>
+                    </div>
+                </section>
+                
+                <!-- Awards & Certs -->
+                <section>
+                    <h2 class="text-2xl font-bold mb-6 flex items-center gap-2"><span class="w-8 h-1 bg-gradient-accent rounded-full"></span> Penghargaan</h2>
+                    <ul class="space-y-4">
+                        <li class="flex gap-3 items-start">
+                            <span class="text-orange-500 text-xl">🏆</span>
+                            <div>
+                                <h4 class="font-bold text-sm text-gray-800">Wisudawan Terbaik Diploma</h4>
+                                <p class="text-xs text-gray-500">Universitas Padjadjaran</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-3 items-start">
+                            <span class="text-orange-500 text-xl">🏅</span>
+                            <div>
+                                <h4 class="font-bold text-sm text-gray-800">Campus Leader Honor of Kings</h4>
+                                <p class="text-xs text-gray-500">Universitas Padjadjaran</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-3 items-start">
+                            <span class="text-orange-500 text-xl">📜</span>
+                            <div>
+                                <h4 class="font-bold text-sm text-gray-800">BNSP Digital Marketing</h4>
+                                <p class="text-xs text-gray-500">LSP Teknologi Digital</p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
             </div>
         </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-24 bg-brand-900 text-white relative overflow-hidden">
-        <!-- Dekorasi -->
-        <div class="absolute top-0 right-0 w-96 h-96 bg-brand-600 rounded-full blur-3xl opacity-20 -translate-y-1/2 translate-x-1/2"></div>
-        <div class="absolute bottom-0 left-0 w-96 h-96 bg-cyan-500 rounded-full blur-3xl opacity-20 translate-y-1/2 -translate-x-1/2"></div>
-        
-        <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
-            <h2 class="text-4xl md:text-5xl font-bold mb-6">Punya ide proyek luar biasa?</h2>
-            <p class="text-brand-200 text-lg mb-10 max-w-2xl mx-auto">Jangan ragu untuk menghubungi saya. Saya selalu terbuka untuk mendiskusikan web development, proyek kerja sama, atau peluang kerja baru.</p>
-            
-            <a href="mailto:emailkamu@gmail.com" class="inline-block bg-white text-brand-900 px-10 py-5 rounded-full font-bold text-lg hover:scale-105 transition-transform shadow-2xl">
-                <i class="fas fa-envelope mr-2 text-brand-600"></i> Kirim Email Sekarang
-            </a>
-            
-            <div class="flex justify-center gap-6 mt-16">
-                <a href="https://github.com/itsramadhani" target="_blank" class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center hover:bg-brand-600 transition-colors">
-                    <i class="fab fa-github text-xl"></i>
-                </a>
-                <a href="#" class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center hover:bg-brand-600 transition-colors">
-                    <i class="fab fa-linkedin-in text-xl"></i>
-                </a>
-                <a href="#" class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center hover:bg-brand-600 transition-colors">
-                    <i class="fab fa-instagram text-xl"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-slate-900 text-slate-400 py-8 text-center border-t border-white/10">
-        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
-            <p>&copy; 2026 Ramadhani. Didesain dengan <i class="fas fa-heart text-red-500 mx-1"></i></p>
-            <p>Dibuat dengan HTML & Tailwind CSS</p>
-        </div>
-    </footer>
-
+    </div>
 </body>
 </html>

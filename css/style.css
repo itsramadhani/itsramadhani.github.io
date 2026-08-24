@@ -1,0 +1,21 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Language Switcher Logic */
+html[lang="id"] .lang-en {
+    display: none !important;
+}
+
+html[lang="en"] .lang-id {
+    display: none !important;
+}
+
+/* Active state for navigation */
+.nav-link.active {
+    color: #2563eb; /* text-blue-600 */
+    font-weight: 600;
+}

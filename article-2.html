@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mengapa Core Web Vitals Penting - SEOPro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-slate-50 text-gray-800 flex flex-col min-h-screen">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <!-- Logo -->
+                <a href="index.html" class="text-2xl font-bold text-blue-600 flex items-center gap-2">
+                    <i class="fas fa-chart-line text-orange-500"></i>
+                    <span class="lang-id">SEOPro</span>
+                    <span class="lang-en">SEOPro</span>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="nav-link text-gray-600 hover:text-blue-600 transition">
+                        <span class="lang-id">Beranda</span>
+                        <span class="lang-en">Home</span>
+                    </a>
+                    <a href="author.html" class="nav-link text-gray-600 hover:text-blue-600 transition">
+                        <span class="lang-id">Tentang Saya</span>
+                        <span class="lang-en">About Me</span>
+                    </a>
+                    <a href="articles.html" class="nav-link active hover:text-blue-600 transition">
+                        <span class="lang-id">Artikel</span>
+                        <span class="lang-en">Articles</span>
+                    </a>
+                    
+                    <!-- Language Switcher -->
+                    <div class="flex items-center space-x-2 border-l pl-4 border-gray-300">
+                        <button id="btn-lang-id" class="text-blue-600 font-bold hover:text-blue-700 transition">ID</button>
+                        <span class="text-gray-300">|</span>
+                        <button id="btn-lang-en" class="text-gray-500 hover:text-blue-700 transition">EN</button>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-blue-600 focus:outline-none text-2xl">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 pb-4">
+            <a href="index.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-50 hover:text-blue-600">
+                <span class="lang-id">Beranda</span>
+                <span class="lang-en">Home</span>
+            </a>
+            <a href="author.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-50 hover:text-blue-600">
+                <span class="lang-id">Tentang Saya</span>
+                <span class="lang-en">About Me</span>
+            </a>
+            <a href="articles.html" class="block px-4 py-2 text-blue-600 font-semibold bg-gray-50">
+                <span class="lang-id">Artikel</span>
+                <span class="lang-en">Articles</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Article Content -->
+    <main class="flex-grow py-12 bg-white">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <a href="articles.html" class="text-blue-600 hover:underline mb-8 inline-block font-medium">
+                <i class="fas fa-arrow-left mr-2"></i> <span class="lang-id">Kembali ke Blog</span><span class="lang-en">Back to Blog</span>
+            </a>
+            
+            <header class="mb-10">
+                <div class="flex items-center gap-4 text-sm text-gray-500 mb-4">
+                    <span class="bg-orange-100 text-orange-600 px-3 py-1 rounded-full font-semibold">Technical SEO</span>
+                    <span><i class="far fa-calendar-alt mr-1"></i> 5 Agustus 2026</span>
+                </div>
+                <h1 class="text-3xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
+                    <span class="lang-id">Mengapa Core Web Vitals Sangat Penting untuk Ranking</span>
+                    <span class="lang-en">Why Core Web Vitals Are Crucial for Rankings</span>
+                </h1>
+                
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Core Web Vitals" class="w-full h-auto rounded-xl shadow-md">
+            </header>
+
+            <article class="prose prose-lg prose-blue max-w-none text-gray-700">
+                <div class="lang-id">
+                    <p>Google telah secara resmi menjadikan <strong>Core Web Vitals (CWV)</strong> sebagai salah satu faktor penentu peringkat (ranking signal). Ini berarti kecepatan dan pengalaman pengguna kini berbanding lurus dengan performa SEO Anda.</p>
+                    
+                    <h2>Tiga Pilar Core Web Vitals</h2>
+                    <ul>
+                        <li><strong>LCP (Largest Contentful Paint):</strong> Mengukur performa pemuatan (loading). LCP yang baik harus terjadi dalam waktu 2,5 detik pertama.</li>
+                        <li><strong>INP (Interaction to Next Paint):</strong> Pengganti FID yang mengukur responsivitas halaman saat pengguna berinteraksi.</li>
+                        <li><strong>CLS (Cumulative Layout Shift):</strong> Mengukur stabilitas visual. Berapa banyak elemen yang "bergeser" saat memuat? Nilai ideal adalah di bawah 0.1.</li>
+                    </ul>
+
+                    <h2>Cara Memperbaiki Skor CWV Anda</h2>
+                    <p>Untuk LCP, optimalkan ukuran gambar, gunakan format Next-Gen (seperti WebP), dan manfaatkan caching serta CDN. Untuk CLS, pastikan Anda memberikan dimensi width/height pada tag <code>&lt;img&gt;</code> dan hindari menyuntikkan konten dinamis di atas konten yang sudah ada.</p>
+                    
+                    <div class="bg-orange-50 border-l-4 border-orange-500 p-4 my-6 rounded-r">
+                        <p class="m-0 font-medium text-orange-800">Catatan: Meskipun CWV penting, relevansi konten tetap menjadi faktor nomor satu. Halaman lambat dengan konten hebat terkadang masih bisa mengalahkan halaman cepat dengan konten buruk.</p>
+                    </div>
+                </div>
+
+                <div class="lang-en hidden">
+                    <p>Google has officially made <strong>Core Web Vitals (CWV)</strong> a ranking signal. This means speed and user experience are now directly proportional to your SEO performance.</p>
+                    
+                    <h2>The Three Pillars of Core Web Vitals</h2>
+                    <ul>
+                        <li><strong>LCP (Largest Contentful Paint):</strong> Measures loading performance. A good LCP should occur within the first 2.5 seconds.</li>
+                        <li><strong>INP (Interaction to Next Paint):</strong> The successor to FID, measuring page responsiveness when users interact.</li>
+                        <li><strong>CLS (Cumulative Layout Shift):</strong> Measures visual stability. How much do elements "shift" while loading? The ideal score is below 0.1.</li>
+                    </ul>
+
+                    <h2>How to Fix Your CWV Score</h2>
+                    <p>For LCP, optimize image sizes, use Next-Gen formats (like WebP), and utilize caching and CDNs. For CLS, make sure to provide width/height dimensions on <code>&lt;img&gt;</code> tags and avoid injecting dynamic content above existing content.</p>
+                    
+                    <div class="bg-orange-50 border-l-4 border-orange-500 p-4 my-6 rounded-r">
+                        <p class="m-0 font-medium text-orange-800">Note: While CWV is important, content relevance remains the number one factor. A slow page with great content can sometimes still outrank a fast page with poor content.</p>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 pt-16 pb-8 mt-auto">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <a href="index.html" class="text-2xl font-bold text-blue-600 flex items-center gap-2 justify-center md:justify-start">
+                        <i class="fas fa-chart-line text-orange-500"></i>
+                        <span>SEOPro</span>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-100 mt-8 pt-8 text-center text-sm text-gray-500">
+                &copy; <span id="year"></span> SEOPro Portfolio. All rights reserved.
+                <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
